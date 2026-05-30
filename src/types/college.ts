@@ -5,5 +5,9 @@ export type College = {
   fees: number;
   rating: number;
   placementPercentage: number;
+  image?: string;
   about: string;
+  courses?: string;
+  placements?: string;
+  reviews?: string;
 };

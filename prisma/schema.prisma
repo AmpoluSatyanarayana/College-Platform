@@ -12,21 +12,24 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model College {
-  id                  Int      @id @default(autoincrement())
+  id                  Int    @id @default(autoincrement())
   name                String
   location            String
   fees                Int
   rating              Float
-  placementPercentage Float
+  placementPercentage Int
   about               String
 
-  createdAt           DateTime @default(now())
+  image      String?
+  courses    String?
+  placements String?
+  reviews    String?
 
-  savedBy             SavedCollege[]
+  savedColleges SavedCollege[]
+
+  createdAt DateTime @default(now())
 }
-
 
 model User {
   id        Int      @id @default(autoincrement())
@@ -39,14 +42,14 @@ model User {
 }
 
 model SavedCollege {
-  id        Int      @id @default(autoincrement())
+  id Int @id @default(autoincrement())
 
   userId    Int
   collegeId Int
 
-  user      User     @relation(fields: [userId], references: [id])
+  user User @relation(fields: [userId], references: [id])
 
-  college   College  @relation(fields: [collegeId], references: [id])
+  college College @relation(fields: [collegeId], references: [id])
 
   createdAt DateTime @default(now())
 

@@ -2,6 +2,8 @@ import { College } from "@/types/college";
 import DashboardLayout from "@/components/layout/DashboardLayout";
 import { notFound } from "next/navigation";
 import {FaStar,FaMapMarkerAlt,FaRupeeSign,FaBriefcase,FaUniversity } from "react-icons/fa";
+import {LuBookOpen,LuBriefcaseBusiness} from "react-icons/lu";
+
 
 async function getCollege(id: string): Promise<College | null> {
 
@@ -46,6 +48,12 @@ export default async function CollegeDetailsPage({ params,}: { params: Promise<{
 
       <div className="container-custom py-10">
 
+     <img
+       src={college.image}
+       alt={college.name}
+       className="w-full h-80 object-cover rounded-2xl mb-8"
+     />
+
         {/* Header */}
 
         <div className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-2xl p-8 shadow-lg">
@@ -66,8 +74,8 @@ export default async function CollegeDetailsPage({ params,}: { params: Promise<{
 
           <div className="bg-white rounded-xl shadow-md p-6 border">
 
-            <h3 className="text-slate-500 text-sm flex items-center gap-2">
-             <FaRupeeSign/> Annual Fees
+            <h3 className="text-slate-500 text-lg flex items-center gap-2">
+             <FaRupeeSign size={20}/> Annual Fees
             </h3>
 
             <p className="text-3xl font-bold mt-2">
@@ -78,8 +86,8 @@ export default async function CollegeDetailsPage({ params,}: { params: Promise<{
 
           <div className="bg-white rounded-xl shadow-md p-6 border">
 
-            <h3 className="text-slate-500 text-sm flex items-center gap-2">
-             <FaBriefcase/> Placement Rate
+            <h3 className="text-slate-500 text-lg flex items-center gap-2">
+             <FaBriefcase size={20}/> Placement Rate
             </h3>
 
             <p className="text-3xl font-bold mt-2 text-green-600">
@@ -90,8 +98,8 @@ export default async function CollegeDetailsPage({ params,}: { params: Promise<{
 
           <div className="bg-white rounded-xl shadow-md p-6 border">
 
-            <h3 className="text-slate-500 text-sm flex items-center gap-2">
-             <FaStar/> Rating
+            <h3 className="text-slate-500 text-lg flex items-center gap-2">
+             <FaStar size={20}/> Rating
             </h3>
 
             <p className="text-3xl font-bold mt-2 text-yellow-500 flex items-center gap-2">
@@ -102,16 +110,58 @@ export default async function CollegeDetailsPage({ params,}: { params: Promise<{
 
         </div>
 
-        {/* About Section */}
+        {/* Overview Section */}
 
         <div className="bg-white rounded-xl shadow-md border p-8 mt-8">
 
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-          <FaUniversity />  About College
+            <FaUniversity size={30}/> Overview
           </h2>
 
           <p className="text-slate-600 leading-8">
             {college.about}
+          </p>
+
+        </div>
+
+        {/* Courses Section */}
+
+        <div className="bg-white rounded-xl shadow-md border p-8 mt-8">
+
+          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+            <LuBookOpen size={30}/> Courses Offered
+          </h2>
+
+          <p className="text-slate-600 leading-8">
+            {college.courses || "Information not available"}
+          </p>
+
+        </div>
+
+         {/* Placements Section */}
+
+        <div className="bg-white rounded-xl shadow-md border p-8 mt-8">
+
+          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+            <LuBriefcaseBusiness size={30}/> Placements
+          </h2>
+
+          <p className="text-slate-600 leading-8">
+            {college.placements || "Information not available"}
+          </p>
+
+        </div>
+
+        {/* Reviews Section */}
+
+        <div className="bg-white rounded-xl shadow-md border p-8 mt-8">
+
+          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+            <FaStar size={30}/> Student Reviews
+          </h2>
+
+          <p className="text-slate-600 leading-8">
+            {college.reviews || "No reviews available"}
           </p>
 
         </div>

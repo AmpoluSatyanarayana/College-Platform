@@ -1,3 +1,17 @@
+const defaultCourses ="Computer Science, Artificial Intelligence, Data Science, Mechanical Engineering, Civil Engineering, Electrical Engineering";
+
+const topPlacements ="Average Package: ₹20 LPA | Highest Package: ₹1 Cr+ | Top Recruiters: Google, Microsoft, Amazon, Goldman Sachs";
+
+const goodPlacements ="Average Package: ₹12 LPA | Highest Package: ₹50 LPA | Top Recruiters: Microsoft, Amazon, Deloitte, TCS";
+
+const privatePlacements ="Average Package: ₹8 LPA | Highest Package: ₹35 LPA | Top Recruiters: Infosys, Accenture, Cognizant, Wipro";
+
+const topReviews ="Students highly rate research opportunities, placements, faculty and campus life.";
+
+const goodReviews ="Students appreciate academics, placements and vibrant student culture.";
+
+const privateReviews ="Students enjoy modern infrastructure, industry exposure and campus facilities.";
+
 export const collegesData = [
   {
     name: "IIT Bombay",
@@ -5,7 +19,11 @@ export const collegesData = [
     fees: 250000,
     rating: 4.9,
     placementPercentage: 96,
-    about: "Premier engineering institute known for research and placements."
+    about: "Premier engineering institute known for research and placements.",
+    courses: defaultCourses,
+    placements: topPlacements,
+    reviews: topReviews,
+    image: "/images/iit-bombay.jpeg"
   },
   {
     name: "IIT Delhi",
@@ -13,7 +31,11 @@ export const collegesData = [
     fees: 240000,
     rating: 4.8,
     placementPercentage: 95,
-    about: "Top-ranked IIT with strong industry connections."
+    about: "Top-ranked IIT with strong industry connections.",
+    courses: defaultCourses,
+    placements: topPlacements,
+    reviews: topReviews,
+    image: "/images/iit-delhi.jpeg",
   },
   {
     name: "IIT Madras",
@@ -21,7 +43,11 @@ export const collegesData = [
     fees: 230000,
     rating: 4.9,
     placementPercentage: 97,
-    about: "Consistently ranked among India's best engineering colleges."
+    about: "Consistently ranked among India's best engineering colleges.",
+    courses: defaultCourses,
+    placements: topPlacements,
+    reviews: topReviews,
+    image: "/images/iit-madras.jpeg",
   },
   {
     name: "IIT Kanpur",
@@ -29,7 +55,11 @@ export const collegesData = [
     fees: 220000,
     rating: 4.8,
     placementPercentage: 94,
-    about: "Known for innovation and entrepreneurship."
+    about: "Known for innovation and entrepreneurship.",
+    courses: defaultCourses,
+    placements: topPlacements,
+    reviews: topReviews,
+    image: "/images/iit-kanpur.jpeg",
   },
   {
     name: "IIT Kharagpur",
@@ -37,7 +67,11 @@ export const collegesData = [
     fees: 210000,
     rating: 4.7,
     placementPercentage: 93,
-    about: "India's oldest IIT with a large campus."
+    about: "India's oldest IIT with a large campus.",
+    courses: defaultCourses,
+    placements: topPlacements,
+    reviews: topReviews,
+    image: "/images/iit-kharagpur.webp",
   },
 
   {
@@ -46,7 +80,11 @@ export const collegesData = [
     fees: 180000,
     rating: 4.7,
     placementPercentage: 92,
-    about: "One of the best NITs in India."
+    about: "One of the best NITs in India.",
+    courses: defaultCourses,
+    placements: goodPlacements,
+    reviews: goodReviews,
+    image: "/images/nit-trichy.jpeg",
   },
   {
     name: "NIT Surathkal",
@@ -54,7 +92,11 @@ export const collegesData = [
     fees: 175000,
     rating: 4.6,
     placementPercentage: 91,
-    about: "Popular for placements and beautiful campus."
+    about: "Popular for placements and beautiful campus.",
+    courses: defaultCourses,
+    placements: goodPlacements,
+    reviews: goodReviews,
+    image: "/images/nit-surathkal.jpeg",
   },
   {
     name: "NIT Warangal",
@@ -62,7 +104,11 @@ export const collegesData = [
     fees: 170000,
     rating: 4.6,
     placementPercentage: 90,
-    about: "Strong engineering and research programs."
+    about: "Strong engineering and research programs.",
+    courses: defaultCourses,
+    placements: goodPlacements,
+    reviews: goodReviews,
+    image: "/images/nit-warangal.jpg",
   },
   {
     name: "NIT Calicut",
@@ -70,7 +116,11 @@ export const collegesData = [
     fees: 165000,
     rating: 4.5,
     placementPercentage: 89,
-    about: "Leading technical institution in Kerala."
+    about: "Leading technical institution in Kerala.",
+    courses: defaultCourses,
+    placements: goodPlacements,
+    reviews: goodReviews,
+    image: "/images/nit-calicut.jpeg",
   },
   {
     name: "NIT Rourkela",
@@ -78,7 +128,11 @@ export const collegesData = [
     fees: 160000,
     rating: 4.5,
     placementPercentage: 88,
-    about: "Excellent infrastructure and academics."
+    about: "Excellent infrastructure and academics.",
+    courses: defaultCourses,
+    placements: goodPlacements,
+    reviews: goodReviews,
+    image: "/images/nit-rourkela.jpeg",
   },
 
   {
@@ -87,7 +141,11 @@ export const collegesData = [
     fees: 450000,
     rating: 4.8,
     placementPercentage: 95,
-    about: "Prestigious private engineering institution."
+    about: "Prestigious private engineering institution.",
+    courses: defaultCourses,
+    placements: topPlacements,
+    reviews: topReviews,
+    image: "/images/bits-pilani.avif",
   },
   {
     name: "BITS Goa",
@@ -95,7 +153,11 @@ export const collegesData = [
     fees: 430000,
     rating: 4.7,
     placementPercentage: 93,
-    about: "Known for strong placements and student life."
+    about: "Known for strong placements and student life.",
+    courses: defaultCourses,
+    placements: topPlacements,
+    reviews: topReviews,
+    image: "/images/bits-goa.jpeg",
   },
   {
     name: "BITS Hyderabad",
@@ -103,7 +165,11 @@ export const collegesData = [
     fees: 420000,
     rating: 4.7,
     placementPercentage: 92,
-    about: "Growing campus with excellent academics."
+    about: "Growing campus with excellent academics.",
+    courses: defaultCourses,
+    placements: topPlacements,
+    reviews: topReviews,
+    image: "/images/bits-hyderabad.jpeg",
   },
 
   {
@@ -112,7 +178,11 @@ export const collegesData = [
     fees: 350000,
     rating: 4.4,
     placementPercentage: 87,
-    about: "Popular private engineering college."
+    about: "Popular private engineering college.",
+    courses: defaultCourses,
+    placements: privatePlacements,
+    reviews: privateReviews,
+    image: "/images/vit-vellore.jpeg",
   },
   {
     name: "SRM University",
@@ -120,7 +190,11 @@ export const collegesData = [
     fees: 340000,
     rating: 4.3,
     placementPercentage: 85,
-    about: "Large private university with diverse programs."
+    about: "Large private university with diverse programs.",
+    courses: defaultCourses,
+    placements: privatePlacements,
+    reviews: privateReviews,
+    image: "/images/srm-university.webp",
   },
   {
     name: "Manipal Institute of Technology",
@@ -128,7 +202,11 @@ export const collegesData = [
     fees: 360000,
     rating: 4.5,
     placementPercentage: 88,
-    about: "Renowned for engineering and student culture."
+    about: "Renowned for engineering and student culture.",
+    courses: defaultCourses,
+    placements: privatePlacements,
+    reviews: privateReviews,
+    image: "/images/manipal-institute-of-technology.jpeg",
   },
   {
     name: "Thapar Institute",
@@ -136,7 +214,11 @@ export const collegesData = [
     fees: 330000,
     rating: 4.4,
     placementPercentage: 86,
-    about: "Strong reputation in engineering education."
+    about: "Strong reputation in engineering education.",
+    courses: defaultCourses,
+    placements: privatePlacements,
+    reviews: privateReviews,
+    image: "/images/thapar-institute.jpeg",
   },
   {
     name: "Amrita Vishwa Vidyapeetham",
@@ -144,7 +226,11 @@ export const collegesData = [
     fees: 300000,
     rating: 4.4,
     placementPercentage: 84,
-    about: "Highly ranked private university."
+    about: "Highly ranked private university.",
+    courses: defaultCourses,
+    placements: privatePlacements,
+    reviews: privateReviews,
+    image: "/images/amrita.jpeg",
   },
 
   {
@@ -153,7 +239,11 @@ export const collegesData = [
     fees: 280000,
     rating: 4.9,
     placementPercentage: 98,
-    about: "Leading institute for Computer Science."
+    about: "Leading institute for Computer Science.",
+    courses: defaultCourses,
+    placements: topPlacements,
+    reviews: topReviews,
+    image: "/images/iiit-hyderabad.webp",
   },
   {
     name: "IIIT Bangalore",
@@ -161,7 +251,11 @@ export const collegesData = [
     fees: 290000,
     rating: 4.8,
     placementPercentage: 97,
-    about: "Known for AI and software engineering."
+    about: "Known for AI and software engineering.",
+    courses: defaultCourses,
+    placements: topPlacements,
+    reviews: topReviews,
+    image: "/images/iiit-bangalore.webp",
   },
   {
     name: "IIIT Delhi",
@@ -169,7 +263,11 @@ export const collegesData = [
     fees: 270000,
     rating: 4.7,
     placementPercentage: 95,
-    about: "Top destination for CS students."
+    about: "Top destination for CS students.",
+    courses: defaultCourses,
+    placements: topPlacements,
+    reviews: topReviews,
+    image: "/images/iiit-delhi.jpeg",
   },
 
   {
@@ -178,7 +276,11 @@ export const collegesData = [
     fees: 50000,
     rating: 4.8,
     placementPercentage: 90,
-    about: "Excellent value for money engineering education."
+    about: "Excellent value for money engineering education.",
+    courses: defaultCourses,
+    placements: goodPlacements,
+    reviews: goodReviews,
+    image: "/images/jadavpur.jpeg",
   },
   {
     name: "Anna University",
@@ -186,7 +288,11 @@ export const collegesData = [
     fees: 70000,
     rating: 4.5,
     placementPercentage: 85,
-    about: "One of the oldest engineering universities."
+    about: "One of the oldest engineering universities.",
+    courses: defaultCourses,
+    placements: goodPlacements,
+    reviews: goodReviews,
+    image: "/images/anna-university.jpeg",
   },
   {
     name: "College of Engineering Pune",
@@ -194,25 +300,29 @@ export const collegesData = [
     fees: 90000,
     rating: 4.6,
     placementPercentage: 86,
-    about: "Historic engineering college with strong alumni."
+    about: "Historic engineering college with strong alumni.",
+    courses: defaultCourses,
+    placements: goodPlacements,
+    reviews: goodReviews,
+    image: "/images/cllg-of-eng-pune.jpeg",
   },
 
   // Add 25 more similar colleges
-  { name: "PES University", location: "Bangalore", fees: 300000, rating: 4.3, placementPercentage: 84, about: "Popular private university." },
-  { name: "RV College of Engineering", location: "Bangalore", fees: 250000, rating: 4.7, placementPercentage: 92, about: "Top engineering college in Karnataka." },
-  { name: "MS Ramaiah Institute", location: "Bangalore", fees: 220000, rating: 4.4, placementPercentage: 85, about: "Strong placements and academics." },
-  { name: "DSCE", location: "Bangalore", fees: 210000, rating: 4.3, placementPercentage: 82, about: "Well-known engineering institution." },
-  { name: "BMSCE", location: "Bangalore", fees: 230000, rating: 4.4, placementPercentage: 86, about: "One of Karnataka's oldest engineering colleges." },
+  { name: "PES University", location: "Bangalore", fees: 300000, rating: 4.3, placementPercentage: 84, about: "Popular private university.",courses: defaultCourses,placements: privatePlacements,reviews: privateReviews,image: "/images/pes-university.jpeg",},
+  { name: "RV College of Engineering", location: "Bangalore", fees: 250000, rating: 4.7, placementPercentage: 92, about: "Top engineering college in Karnataka.",courses: defaultCourses,placements: privatePlacements,reviews: privateReviews,image: "/images/rv-cllg.jpeg" },
+  { name: "MS Ramaiah Institute", location: "Bangalore", fees: 220000, rating: 4.4, placementPercentage: 85, about: "Strong placements and academics.",courses: defaultCourses,placements: privatePlacements,reviews: privateReviews,image: "/images/ramaiah-institute.jpeg" },
+  { name: "DSCE", location: "Bangalore", fees: 210000, rating: 4.3, placementPercentage: 82, about: "Well-known engineering institution.",courses: defaultCourses,placements: privatePlacements,reviews: privateReviews,image: "/images/dsce.jpeg" },
+  { name: "BMSCE", location: "Bangalore", fees: 230000, rating: 4.4, placementPercentage: 86, about: "One of Karnataka's oldest engineering colleges.",courses: defaultCourses,placements: privatePlacements,reviews: privateReviews,image: "/images/bmsce.jpeg" },
 
-  { name: "KIIT", location: "Bhubaneswar", fees: 280000, rating: 4.2, placementPercentage: 80, about: "Large private university." },
-  { name: "SASTRA University", location: "Thanjavur", fees: 190000, rating: 4.4, placementPercentage: 84, about: "Highly reputed private institution." },
-  { name: "LPU", location: "Punjab", fees: 250000, rating: 4.0, placementPercentage: 78, about: "Large multidisciplinary university." },
-  { name: "Chandigarh University", location: "Chandigarh", fees: 220000, rating: 4.1, placementPercentage: 79, about: "Fast-growing private university." },
-  { name: "UPES", location: "Dehradun", fees: 300000, rating: 4.2, placementPercentage: 81, about: "Known for industry-oriented programs." },
+  { name: "KIIT", location: "Bhubaneswar", fees: 280000, rating: 4.2, placementPercentage: 80, about: "Large private university.",courses: defaultCourses,placements: privatePlacements,reviews: privateReviews,image: "/images/kiit.jpeg" },
+  { name: "SASTRA University", location: "Thanjavur", fees: 190000, rating: 4.4, placementPercentage: 84, about: "Highly reputed private institution.",courses: defaultCourses,placements: privatePlacements,reviews: privateReviews,image: "/images/sastra-university.jpeg" },
+  { name: "LPU", location: "Punjab", fees: 250000, rating: 4.0, placementPercentage: 78, about: "Large multidisciplinary university.",courses: defaultCourses,placements: privatePlacements,reviews: privateReviews,image: "/images/lpu.jpeg" },
+  { name: "Chandigarh University", location: "Chandigarh", fees: 220000, rating: 4.1, placementPercentage: 79, about: "Fast-growing private university.",courses: defaultCourses,placements: privatePlacements,reviews: privateReviews,image: "/images/chandigarh-university.jpeg" },
+  { name: "UPES", location: "Dehradun", fees: 300000, rating: 4.2, placementPercentage: 81, about: "Known for industry-oriented programs.",courses: defaultCourses,placements: privatePlacements,reviews: privateReviews,image: "/images/upes.jpeg" },
 
-  { name: "IIT Roorkee", location: "Roorkee", fees: 220000, rating: 4.8, placementPercentage: 95, about: "Historic IIT with excellent placements." },
-  { name: "IIT Guwahati", location: "Guwahati", fees: 220000, rating: 4.8, placementPercentage: 94, about: "Beautiful campus and strong academics." },
-  { name: "IIT Hyderabad", location: "Hyderabad", fees: 230000, rating: 4.8, placementPercentage: 95, about: "Rapidly rising IIT." },
-  { name: "IIT Indore", location: "Indore", fees: 210000, rating: 4.7, placementPercentage: 92, about: "Known for innovation." },
-  { name: "IIT BHU", location: "Varanasi", fees: 200000, rating: 4.7, placementPercentage: 91, about: "Historic engineering institution." }
+  { name: "IIT Roorkee", location: "Roorkee", fees: 220000, rating: 4.8, placementPercentage: 95, about: "Historic IIT with excellent placements.",courses: defaultCourses, placements: topPlacements, reviews: topReviews,image: "/images/iit-roorkee.jpeg" },
+  { name: "IIT Guwahati", location: "Guwahati", fees: 220000, rating: 4.8, placementPercentage: 94, about: "Beautiful campus and strong academics.",courses: defaultCourses, placements: topPlacements, reviews: topReviews,image: "/images/iit-guwahati.jpeg" },
+  { name: "IIT Hyderabad", location: "Hyderabad", fees: 230000, rating: 4.8, placementPercentage: 95, about: "Rapidly rising IIT.",courses: defaultCourses, placements: topPlacements, reviews: topReviews,image: "/images/iit-hyderabad.jpeg" },
+  { name: "IIT Indore", location: "Indore", fees: 210000, rating: 4.7, placementPercentage: 92, about: "Known for innovation.",courses: defaultCourses, placements: topPlacements, reviews: topReviews,image: "/images/iit-indore.jpeg" },
+  { name: "IIT BHU", location: "Varanasi", fees: 200000, rating: 4.7, placementPercentage: 91, about: "Historic engineering institution.",courses: defaultCourses, placements: topPlacements, reviews: topReviews,image: "/images/iit-bhu.jpeg" }
 ];
