@@ -21,7 +21,7 @@ export default function HomePage() {
   return (
 
     <>
-    <section className="container-custom py-10">
+    <section className="container-custom py-8 sm:py-10">
 
       <div className="max-w-5xl mx-auto text-center">
 
@@ -29,7 +29,7 @@ export default function HomePage() {
           🎓 Discover Your Perfect College
         </span>
 
-        <h1 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-slate-100 leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-slate-100 leading-tight">
 
           Find, Compare & Save
 
@@ -39,7 +39,7 @@ export default function HomePage() {
 
         </h1>
 
-        <p className="text-lg text-slate-600 dark:text-slate-300 mt-6 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 mt-4 sm:mt-6 max-w-2xl mx-auto px-2 sm:px-0">
 
           Search colleges, compare fees and ratings,
           explore details, and save your favorites —
@@ -48,36 +48,36 @@ export default function HomePage() {
         </p>
 
         {!isLoggedIn ? (
-       <div className="flex justify-center gap-4 mt-10">
+       <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 sm:gap-4 mt-8 sm:mt-10 px-4 sm:px-0">
      
          <Link
            href="/login"
-           className="px-8 py-4 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
+           className="px-6 sm:px-8 py-3 sm:py-4 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-700 transition text-center"
          >
            Login
          </Link>
      
          <Link
            href="/register"
-           className="px-8 py-4 rounded-xl border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+           className="px-6 sm:px-8 py-3 sm:py-4 rounded-xl border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition text-center"
          >
            Register
          </Link>
      
        </div>
      ) : (
-       <div className="flex justify-center gap-4 mt-10">
+       <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 sm:gap-4 mt-8 sm:mt-10 px-4 sm:px-0">
      
          <Link
            href="/colleges"
-           className="px-8 py-4 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-700 transition flex items-center gap-2"
+           className="px-6 sm:px-8 py-3 sm:py-4 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-700 transition flex items-center justify-center gap-2"
          >
           <FaSearch />  Explore Colleges
          </Link>
      
          <Link
            href="/compare"
-           className="px-8 py-4 rounded-xl border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition flex items-center gap-2"
+           className="px-6 sm:px-8 py-3 sm:py-4 rounded-xl border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition flex items-center justify-center gap-2"
          >
           <FaChartBar /> Compare Colleges
          </Link>
@@ -92,12 +92,12 @@ export default function HomePage() {
 
 
     {/* //Stats Section */}
-<section className="container-custom pb-15">
+<section className="container-custom pb-10 sm:pb-15">
 
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
 
-    <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 text-center">
-      <h3 className="text-3xl font-bold text-blue-600">
+    <div className="bg-white dark:bg-slate-800 rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-sm border border-slate-200 dark:border-slate-700 text-center">
+      <h3 className="text-xl sm:text-3xl font-bold text-blue-600">
         10+
       </h3>
       <p className="text-slate-600 dark:text-slate-300 mt-2">
@@ -105,8 +105,8 @@ export default function HomePage() {
       </p>
     </div>
 
-    <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 text-center">
-      <h3 className="text-3xl font-bold text-blue-600">
+    <div className="bg-white dark:bg-slate-800 rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-sm border border-slate-200 dark:border-slate-700 text-center">
+      <h3 className="text-xl sm:text-3xl font-bold text-blue-600">
         100+
       </h3>
       <p className="text-slate-600 dark:text-slate-300 mt-2">
@@ -114,8 +114,8 @@ export default function HomePage() {
       </p>
     </div>
 
-    <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 text-center">
-      <h3 className="text-3xl font-bold text-blue-600">
+    <div className="bg-white dark:bg-slate-800 rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-sm border border-slate-200 dark:border-slate-700 text-center">
+      <h3 className="text-xl sm:text-3xl font-bold text-blue-600">
         Secure
       </h3>
       <p className="text-slate-600 dark:text-slate-300 mt-2">
@@ -123,8 +123,8 @@ export default function HomePage() {
       </p>
     </div>
 
-    <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 text-center">
-      <h3 className="text-3xl font-bold text-blue-600">
+    <div className="bg-white dark:bg-slate-800 rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-sm border border-slate-200 dark:border-slate-700 text-center">
+      <h3 className="text-xl sm:text-3xl font-bold text-blue-600">
         Fast
       </h3>
       <p className="text-slate-600 dark:text-slate-300 mt-2">

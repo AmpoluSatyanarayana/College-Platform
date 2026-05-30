@@ -18,7 +18,7 @@ export default function CollegeCard({college,isSaved,onRemove,onSave}: Props) {
   return (
     <div className="bg-white dark:bg-slate-800 p-5 rounded-xl shadow-md border border-slate-200 dark:border-slate-700">
       
-      <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100">
+      <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-slate-100 break-words">
         {college.name}
       </h2>
 
@@ -36,7 +36,7 @@ export default function CollegeCard({college,isSaved,onRemove,onSave}: Props) {
         </p>
       </div>
 
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-2">
 
       <Link
         href={`/colleges/${college.id}`}

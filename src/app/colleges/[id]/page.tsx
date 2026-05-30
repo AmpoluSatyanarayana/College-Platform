@@ -46,23 +46,23 @@ export default async function CollegeDetailsPage({ params,}: { params: Promise<{
   return (
     <DashboardLayout>
 
-      <div className="container-custom py-10">
+      <div className="container-custom py-6 sm:py-10">
 
      <img
        src={college.image}
        alt={college.name}
-       className="w-full h-80 object-cover rounded-2xl mb-8"
+       className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-xl sm:rounded-2xl mb-6 sm:mb-8"
      />
 
         {/* Header */}
 
-        <div className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-2xl p-8 shadow-lg">
+        <div className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-lg">
 
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold break-words">
             {college.name}
           </h1>
 
-          <p className="mt-3 text-lg opacity-90 flex items-center gap-2">
+          <p className="mt-3 text-base sm:text-lg opacity-90 flex items-center gap-2 flex-wrap">
             <FaMapMarkerAlt/> {college.location}
           </p>
 
@@ -112,7 +112,7 @@ export default async function CollegeDetailsPage({ params,}: { params: Promise<{
 
         {/* Overview Section */}
 
-        <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 p-8 mt-8">
+        <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 p-5 sm:p-8 mt-6 sm:mt-8">
 
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-slate-900 dark:text-slate-100">
             <FaUniversity size={30}/> Overview
@@ -126,7 +126,7 @@ export default async function CollegeDetailsPage({ params,}: { params: Promise<{
 
         {/* Courses Section */}
 
-        <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 p-8 mt-8">
+        <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 p-5 sm:p-8 mt-6 sm:mt-8">
 
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-slate-900 dark:text-slate-100">
             <LuBookOpen size={30}/> Courses Offered
@@ -140,7 +140,7 @@ export default async function CollegeDetailsPage({ params,}: { params: Promise<{
 
          {/* Placements Section */}
 
-        <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 p-8 mt-8">
+        <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 p-5 sm:p-8 mt-6 sm:mt-8">
 
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-slate-900 dark:text-slate-100">
             <LuBriefcaseBusiness size={30}/> Placements
@@ -154,7 +154,7 @@ export default async function CollegeDetailsPage({ params,}: { params: Promise<{
 
         {/* Reviews Section */}
 
-        <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 p-8 mt-8">
+        <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 p-5 sm:p-8 mt-6 sm:mt-8">
 
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-slate-900 dark:text-slate-100">
             <FaStar size={30}/> Student Reviews

@@ -51,9 +51,9 @@ export default function ComparePage() {
     };
 
   return (
-    <div className="container-custom py-10">
+    <div className="container-custom py-6 sm:py-10">
 
-      <h1 className="text-3xl font-bold mb-8 flex items-center gap-2 text-slate-900 dark:text-slate-100">
+      <h1 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 flex items-center gap-2 text-slate-900 dark:text-slate-100">
       <FaChartBar/> Compare Colleges
       </h1>
 
@@ -75,9 +75,9 @@ export default function ComparePage() {
 
                <div
                  key={college.id}
-                 className="flex items-center justify-between border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800 p-3 rounded-lg text-slate-900 dark:text-slate-100"
+                 className="flex items-center justify-between gap-3 border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800 p-3 rounded-lg text-slate-900 dark:text-slate-100"
                >
-                 <span>{college.name}</span>
+                 <span className="min-w-0 break-words">{college.name}</span>
 
                  <button
                    onClick={() =>
@@ -100,7 +100,7 @@ export default function ComparePage() {
          {selectedColleges.length >= 2 && (
             <button
               onClick={handleCompare}
-              className="mt-8 px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition"
+              className="mt-6 sm:mt-8 w-full sm:w-auto px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition"
             >
               Compare Colleges
              </button>

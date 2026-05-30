@@ -49,8 +49,8 @@ export default async function CollegesPage({
 
   return (
     <DashboardLayout>
-      <div className="p-8">
-        <h1 className="text-3xl font-bold mb-6 flex items-center gap-2 text-slate-900 dark:text-slate-100">
+      <div className="p-4 sm:p-6 lg:p-8">
+        <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 flex items-center gap-2 text-slate-900 dark:text-slate-100">
          <FaUniversity/> Colleges
         </h1>
 
@@ -58,7 +58,7 @@ export default async function CollegesPage({
 
         <CollegesList colleges={colleges} />
 
-<div className="flex justify-center gap-4 mt-10">
+<div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-8 sm:mt-10">
 
   {page > 1 && (
     <Link

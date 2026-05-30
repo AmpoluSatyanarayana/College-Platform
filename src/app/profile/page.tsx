@@ -51,11 +51,11 @@ export default function ProfilePage() {
 
     <DashboardLayout>
 
-      <div className="max-w-3xl mx-auto py-10">
+      <div className="max-w-3xl mx-auto py-6 sm:py-10">
 
-        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 p-8">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 p-5 sm:p-8">
 
-          <div className="flex items-center gap-6">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 text-center sm:text-left">
 
             <div className="w-20 h-20 rounded-full bg-blue-600 text-white flex items-center justify-center text-3xl font-bold">
 
@@ -79,7 +79,7 @@ export default function ProfilePage() {
 
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-8 sm:mt-10">
 
             <div className="border border-slate-200 dark:border-slate-600 rounded-xl p-6">
 

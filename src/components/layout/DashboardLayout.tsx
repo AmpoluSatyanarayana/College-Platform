@@ -35,7 +35,7 @@ export default function DashboardLayout({
   return (
     <div>
 
-      <main className="container-custom py-8">
+      <main className="container-custom py-4 sm:py-8">
         {children}
       </main>
     </div>

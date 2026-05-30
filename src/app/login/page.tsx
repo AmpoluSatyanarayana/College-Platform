@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useAuth } from "@/context/AuthContext";
+import { MdWavingHand } from "react-icons/md";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -68,10 +69,10 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
 
-      <div className="w-full max-w-md bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-8 border border-transparent dark:border-slate-700">
+      <div className="w-full max-w-md bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-6 sm:p-8 border border-transparent dark:border-slate-700">
 
-        <h1 className="text-3xl font-bold text-center text-slate-900 dark:text-slate-100">
-          Welcome Back 👋
+        <h1 className="text-2xl sm:text-3xl font-bold text-center text-slate-900 dark:text-slate-100 flex flex-wrap items-center gap-2 justify-center">
+          Welcome Back <MdWavingHand className="text-yellow-500"/>
         </h1>
 
         <p className="text-center text-slate-500 dark:text-slate-400 mt-2">
