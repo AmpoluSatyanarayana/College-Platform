@@ -16,17 +16,17 @@ export default function CollegeCard({college,isSaved,onRemove,onSave}: Props) {
 
 
   return (
-    <div className="bg-white p-5 rounded-xl shadow-md border">
+    <div className="bg-white dark:bg-slate-800 p-5 rounded-xl shadow-md border border-slate-200 dark:border-slate-700">
       
-      <h2 className="text-xl font-bold">
+      <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100">
         {college.name}
       </h2>
 
-      <p className="text-gray-600 mt-2">
+      <p className="text-gray-600 dark:text-slate-300 mt-2">
         {college.location}
       </p>
 
-      <div className="mt-4 space-y-1">
+      <div className="mt-4 space-y-1 text-slate-700 dark:text-slate-300">
         <p>
           Fees: ₹{college.fees}
         </p>

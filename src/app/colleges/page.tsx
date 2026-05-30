@@ -50,7 +50,7 @@ export default async function CollegesPage({
   return (
     <DashboardLayout>
       <div className="p-8">
-        <h1 className="text-3xl font-bold mb-6 flex items-center gap-2">
+        <h1 className="text-3xl font-bold mb-6 flex items-center gap-2 text-slate-900 dark:text-slate-100">
          <FaUniversity/> Colleges
         </h1>
 
@@ -63,7 +63,7 @@ export default async function CollegesPage({
   {page > 1 && (
     <Link
       href={`/colleges?search=${params.search || ""}&page=${page - 1}`}
-      className="px-4 py-2 bg-gray-200 rounded"
+      className="px-4 py-2 bg-gray-200 dark:bg-slate-700 text-slate-900 dark:text-slate-100 rounded"
     >
       Previous
     </Link>

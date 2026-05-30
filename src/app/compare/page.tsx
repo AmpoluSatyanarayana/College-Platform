@@ -53,7 +53,7 @@ export default function ComparePage() {
   return (
     <div className="container-custom py-10">
 
-      <h1 className="text-3xl font-bold mb-8 flex items-center gap-2">
+      <h1 className="text-3xl font-bold mb-8 flex items-center gap-2 text-slate-900 dark:text-slate-100">
       <FaChartBar/> Compare Colleges
       </h1>
 
@@ -61,12 +61,12 @@ export default function ComparePage() {
 
       <div className="mt-8">
 
-        <h2 className="text-xl font-semibold mb-4">
+        <h2 className="text-xl font-semibold mb-4 text-slate-900 dark:text-slate-100">
           Selected Colleges
         </h2>
 
         {selectedColleges.length === 0 ? (
-          <p className="text-slate-500">
+          <p className="text-slate-500 dark:text-slate-400">
             No colleges selected. Select atleast 2 to compare.
           </p>
         ) : (
@@ -75,7 +75,7 @@ export default function ComparePage() {
 
                <div
                  key={college.id}
-                 className="flex items-center justify-between border p-3 rounded-lg"
+                 className="flex items-center justify-between border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-800 p-3 rounded-lg text-slate-900 dark:text-slate-100"
                >
                  <span>{college.name}</span>
 

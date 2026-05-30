@@ -1,18 +1,34 @@
-import {AuthProvider} from "@/context/AuthContext";
+import { AuthProvider } from "@/context/AuthContext";
+import { ThemeProvider } from "@/context/ThemeContext";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 
-export default function RootLayout({children,}: {children: React.ReactNode;}) {
+const themeScript = `
+(function () {
+  try {
+    var t = localStorage.getItem("theme");
+    if (t === "dark") document.documentElement.classList.add("dark");
+  } catch (e) {}
+})();
+`;
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body>
-
-        <AuthProvider>
-          <Navbar/>
-          
-          {children}
-        </AuthProvider>
-
+        <ThemeProvider>
+          <AuthProvider>
+            <Navbar />
+            {children}
+          </AuthProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

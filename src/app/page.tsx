@@ -25,11 +25,11 @@ export default function HomePage() {
 
       <div className="max-w-5xl mx-auto text-center">
 
-        <span className="inline-block px-4 py-2 rounded-full bg-yellow-100 text-yellow-700 font-medium mb-6">
+        <span className="inline-block px-4 py-2 rounded-full bg-yellow-100 dark:bg-yellow-900/40 text-yellow-700 dark:text-yellow-300 font-medium mb-6">
           🎓 Discover Your Perfect College
         </span>
 
-        <h1 className="text-5xl md:text-6xl font-bold text-slate-900 leading-tight">
+        <h1 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-slate-100 leading-tight">
 
           Find, Compare & Save
 
@@ -39,7 +39,7 @@ export default function HomePage() {
 
         </h1>
 
-        <p className="text-lg text-slate-600 mt-6 max-w-2xl mx-auto">
+        <p className="text-lg text-slate-600 dark:text-slate-300 mt-6 max-w-2xl mx-auto">
 
           Search colleges, compare fees and ratings,
           explore details, and save your favorites —
@@ -59,7 +59,7 @@ export default function HomePage() {
      
          <Link
            href="/register"
-           className="px-8 py-4 rounded-xl border border-slate-300 font-medium hover:bg-slate-100 transition"
+           className="px-8 py-4 rounded-xl border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition"
          >
            Register
          </Link>
@@ -77,7 +77,7 @@ export default function HomePage() {
      
          <Link
            href="/compare"
-           className="px-8 py-4 rounded-xl border border-slate-300 font-medium hover:bg-slate-100 transition flex items-center gap-2"
+           className="px-8 py-4 rounded-xl border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition flex items-center gap-2"
          >
           <FaChartBar /> Compare Colleges
          </Link>
@@ -96,38 +96,38 @@ export default function HomePage() {
 
   <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
 
-    <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 text-center">
+    <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 text-center">
       <h3 className="text-3xl font-bold text-blue-600">
         10+
       </h3>
-      <p className="text-slate-600 mt-2">
+      <p className="text-slate-600 dark:text-slate-300 mt-2">
         Colleges
       </p>
     </div>
 
-    <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 text-center">
+    <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 text-center">
       <h3 className="text-3xl font-bold text-blue-600">
         100+
       </h3>
-      <p className="text-slate-600 mt-2">
+      <p className="text-slate-600 dark:text-slate-300 mt-2">
         Searches
       </p>
     </div>
 
-    <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 text-center">
+    <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 text-center">
       <h3 className="text-3xl font-bold text-blue-600">
         Secure
       </h3>
-      <p className="text-slate-600 mt-2">
+      <p className="text-slate-600 dark:text-slate-300 mt-2">
         Authentication
       </p>
     </div>
 
-    <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 text-center">
+    <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 text-center">
       <h3 className="text-3xl font-bold text-blue-600">
         Fast
       </h3>
-      <p className="text-slate-600 mt-2">
+      <p className="text-slate-600 dark:text-slate-300 mt-2">
         Search
       </p>
     </div>

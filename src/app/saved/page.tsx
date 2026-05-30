@@ -74,19 +74,19 @@ const handleRemove = async (
 
     <div className="container-custom py-10">
 
-      <h1 className="text-3xl font-bold mb-8 flex items-center gap-2">
+      <h1 className="text-3xl font-bold mb-8 flex items-center gap-2 text-slate-900 dark:text-slate-100">
         <FaBookmark /> Saved Colleges 
       </h1>
 
       {savedColleges.length === 0 ? (
 
-        <div className="bg-white p-10 rounded-2xl text-center border">
+        <div className="bg-white dark:bg-slate-800 p-10 rounded-2xl text-center border border-slate-200 dark:border-slate-700">
 
-          <h2 className="text-xl font-semibold">
+          <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-100">
             No Saved Colleges
           </h2>
 
-          <p className="text-slate-500 mt-2">
+          <p className="text-slate-500 dark:text-slate-400 mt-2">
             Save colleges to view them here.
           </p>
 

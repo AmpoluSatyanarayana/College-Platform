@@ -8,7 +8,7 @@ export default function CompareTable({compareData}:Props) {
 
 return (
 
-  <div className="mt-12 bg-white rounded-2xl shadow-lg overflow-hidden border">
+  <div className="mt-12 bg-white dark:bg-slate-800 rounded-2xl shadow-lg overflow-hidden border border-slate-200 dark:border-slate-700">
 
     <div className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white p-5">
 
@@ -26,16 +26,16 @@ return (
 
           {/* Name */}
 
-          <tr className="border-b">
+          <tr className="border-b border-slate-200 dark:border-slate-700">
 
-            <td className="font-semibold p-4 bg-slate-50 flex items-center gap-2">
+            <td className="font-semibold p-4 bg-slate-50 dark:bg-slate-700/50 text-slate-900 dark:text-slate-100 flex items-center gap-2">
              <FaUniversity/> College
             </td>
 
             {compareData.map((college:any) => (
               <td
                 key={college.id}
-                className="p-4 text-center font-bold"
+                className="p-4 text-center font-bold text-slate-900 dark:text-slate-100"
               >
                 {college.name}
               </td>
@@ -45,16 +45,16 @@ return (
 
           {/* Location */}
 
-          <tr className="border-b">
+          <tr className="border-b border-slate-200 dark:border-slate-700">
 
-            <td className="font-semibold p-4 bg-slate-50 flex items-center gap-2">
+            <td className="font-semibold p-4 bg-slate-50 dark:bg-slate-700/50 text-slate-900 dark:text-slate-100 flex items-center gap-2">
               <FaMapMarkerAlt/> Location
             </td>
 
             {compareData.map((college:any) => (
               <td
                 key={college.id}
-                className="p-4 text-center"
+                className="p-4 text-center text-slate-700 dark:text-slate-300"
               >
                 {college.location}
               </td>
@@ -64,16 +64,16 @@ return (
 
           {/* Fees */}
 
-          <tr className="border-b">
+          <tr className="border-b border-slate-200 dark:border-slate-700">
 
-            <td className="font-semibold p-4 bg-slate-50 flex items-center gap-2">
+            <td className="font-semibold p-4 bg-slate-50 dark:bg-slate-700/50 text-slate-900 dark:text-slate-100 flex items-center gap-2">
              <FaRupeeSign/> Fees
             </td>
 
             {compareData.map((college:any) => (
               <td
                 key={college.id}
-                className="p-4 text-center"
+                className="p-4 text-center text-slate-700 dark:text-slate-300"
               >
                 ₹{college.fees}
               </td>
@@ -82,16 +82,16 @@ return (
           </tr>
 
           {/*Placement percentage*/}
-          <tr className="border-b">
+          <tr className="border-b border-slate-200 dark:border-slate-700">
 
-            <td className="font-semibold p-4 bg-slate-50 flex items-center gap-2">
+            <td className="font-semibold p-4 bg-slate-50 dark:bg-slate-700/50 text-slate-900 dark:text-slate-100 flex items-center gap-2">
              <FaBriefcase/>  Placement Percentage
             </td>
 
             {compareData.map((college:any) => (
               <td
                 key={college.id}
-                className="p-4 text-center"
+                className="p-4 text-center text-slate-700 dark:text-slate-300"
               >
                 {college.placementPercentage}%
               </td>
@@ -104,7 +104,7 @@ return (
 
           <tr>
 
-            <td className="font-semibold p-4 bg-slate-50 flex items-center gap-2">
+            <td className="font-semibold p-4 bg-slate-50 dark:bg-slate-700/50 text-slate-900 dark:text-slate-100 flex items-center gap-2">
              <FaStar/> Rating
             </td>
 

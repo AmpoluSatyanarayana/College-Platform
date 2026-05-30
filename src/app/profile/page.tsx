@@ -53,7 +53,7 @@ export default function ProfilePage() {
 
       <div className="max-w-3xl mx-auto py-10">
 
-        <div className="bg-white rounded-2xl shadow-md border p-8">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 p-8">
 
           <div className="flex items-center gap-6">
 
@@ -67,11 +67,11 @@ export default function ProfilePage() {
 
             <div>
 
-              <h1 className="text-3xl font-bold">
+              <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-100">
                 {user?.name}
               </h1>
 
-              <p className="text-slate-500">
+              <p className="text-slate-500 dark:text-slate-400">
                 {user?.email}
               </p>
 
@@ -81,9 +81,9 @@ export default function ProfilePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
 
-            <div className="border rounded-xl p-6">
+            <div className="border border-slate-200 dark:border-slate-600 rounded-xl p-6">
 
-              <h3 className="text-slate-500">
+              <h3 className="text-slate-500 dark:text-slate-400">
                 Saved Colleges
               </h3>
 
@@ -93,9 +93,9 @@ export default function ProfilePage() {
 
             </div>
 
-            <div className="border rounded-xl p-6">
+            <div className="border border-slate-200 dark:border-slate-600 rounded-xl p-6">
 
-              <h3 className="text-slate-500">
+              <h3 className="text-slate-500 dark:text-slate-400">
                 Account Status
               </h3>
 

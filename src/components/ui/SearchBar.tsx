@@ -49,7 +49,7 @@ const handleSearch = async (
         placeholder="Search colleges..."
         value={search}
         onChange={(e) => handleSearch(e.target.value)}
-        className="border p-3 rounded-lg w-full"
+        className="border border-slate-300 dark:border-slate-600 p-3 rounded-lg w-full bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100"
       />
 
       <button
@@ -74,7 +74,7 @@ const handleSearch = async (
 
       {results.length > 0 && (
 
-           <div className="mt-2 border border-slate-200 rounded-lg bg-white shadow">
+           <div className="mt-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 shadow">
 
              {results.map((college: any) => (
 
@@ -87,7 +87,7 @@ const handleSearch = async (
                      `/colleges?search=${college.name}`
                    )
                  }}
-                 className="p-3 hover:bg-slate-100 cursor-pointer"
+                 className="p-3 text-slate-900 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-700 cursor-pointer"
                >
                  {college.name}
                </div>

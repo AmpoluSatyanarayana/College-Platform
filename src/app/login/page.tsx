@@ -68,13 +68,13 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
 
-      <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
+      <div className="w-full max-w-md bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-8 border border-transparent dark:border-slate-700">
 
-        <h1 className="text-3xl font-bold text-center text-slate-900">
+        <h1 className="text-3xl font-bold text-center text-slate-900 dark:text-slate-100">
           Welcome Back 👋
         </h1>
 
-        <p className="text-center text-slate-500 mt-2">
+        <p className="text-center text-slate-500 dark:text-slate-400 mt-2">
           Login to continue
         </p>
 
@@ -90,7 +90,7 @@ export default function LoginPage() {
           )}
 
           <div>
-            <label className="block text-sm font-medium mb-2">
+            <label className="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-200">
               Email
             </label>
 
@@ -100,12 +100,12 @@ export default function LoginPage() {
               value={form.email}
               onChange={handleChange}
               placeholder="Enter your email"
-              className="w-full border border-slate-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+              className="w-full border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-3 outline-none focus:border-blue-500 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-2">
+            <label className="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-200">
               Password
             </label>
 
@@ -115,7 +115,7 @@ export default function LoginPage() {
               value={form.password}
               onChange={handleChange}
               placeholder="Enter your password"
-              className="w-full border border-slate-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+              className="w-full border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-3 outline-none focus:border-blue-500 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100"
             />
           </div>
 
@@ -131,7 +131,7 @@ export default function LoginPage() {
 
         </form>
 
-        <p className="text-center text-sm text-slate-500 mt-6">
+        <p className="text-center text-sm text-slate-500 dark:text-slate-400 mt-6">
           Don't have an account?{" "}
           <Link
             href="/register"

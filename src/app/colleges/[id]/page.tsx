@@ -72,21 +72,21 @@ export default async function CollegeDetailsPage({ params,}: { params: Promise<{
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
 
-          <div className="bg-white rounded-xl shadow-md p-6 border">
+          <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md p-6 border border-slate-200 dark:border-slate-700">
 
-            <h3 className="text-slate-500 text-lg flex items-center gap-2">
+            <h3 className="text-slate-500 dark:text-slate-400 text-lg flex items-center gap-2">
              <FaRupeeSign size={20}/> Annual Fees
             </h3>
 
-            <p className="text-3xl font-bold mt-2">
+            <p className="text-3xl font-bold mt-2 text-slate-900 dark:text-slate-100">
               ₹{college.fees}
             </p>
 
           </div>
 
-          <div className="bg-white rounded-xl shadow-md p-6 border">
+          <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md p-6 border border-slate-200 dark:border-slate-700">
 
-            <h3 className="text-slate-500 text-lg flex items-center gap-2">
+            <h3 className="text-slate-500 dark:text-slate-400 text-lg flex items-center gap-2">
              <FaBriefcase size={20}/> Placement Rate
             </h3>
 
@@ -96,9 +96,9 @@ export default async function CollegeDetailsPage({ params,}: { params: Promise<{
 
           </div>
 
-          <div className="bg-white rounded-xl shadow-md p-6 border">
+          <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md p-6 border border-slate-200 dark:border-slate-700">
 
-            <h3 className="text-slate-500 text-lg flex items-center gap-2">
+            <h3 className="text-slate-500 dark:text-slate-400 text-lg flex items-center gap-2">
              <FaStar size={20}/> Rating
             </h3>
 
@@ -112,13 +112,13 @@ export default async function CollegeDetailsPage({ params,}: { params: Promise<{
 
         {/* Overview Section */}
 
-        <div className="bg-white rounded-xl shadow-md border p-8 mt-8">
+        <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 p-8 mt-8">
 
-          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-slate-900 dark:text-slate-100">
             <FaUniversity size={30}/> Overview
           </h2>
 
-          <p className="text-slate-600 leading-8">
+          <p className="text-slate-600 dark:text-slate-300 leading-8">
             {college.about}
           </p>
 
@@ -126,13 +126,13 @@ export default async function CollegeDetailsPage({ params,}: { params: Promise<{
 
         {/* Courses Section */}
 
-        <div className="bg-white rounded-xl shadow-md border p-8 mt-8">
+        <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 p-8 mt-8">
 
-          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-slate-900 dark:text-slate-100">
             <LuBookOpen size={30}/> Courses Offered
           </h2>
 
-          <p className="text-slate-600 leading-8">
+          <p className="text-slate-600 dark:text-slate-300 leading-8">
             {college.courses || "Information not available"}
           </p>
 
@@ -140,13 +140,13 @@ export default async function CollegeDetailsPage({ params,}: { params: Promise<{
 
          {/* Placements Section */}
 
-        <div className="bg-white rounded-xl shadow-md border p-8 mt-8">
+        <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 p-8 mt-8">
 
-          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-slate-900 dark:text-slate-100">
             <LuBriefcaseBusiness size={30}/> Placements
           </h2>
 
-          <p className="text-slate-600 leading-8">
+          <p className="text-slate-600 dark:text-slate-300 leading-8">
             {college.placements || "Information not available"}
           </p>
 
@@ -154,13 +154,13 @@ export default async function CollegeDetailsPage({ params,}: { params: Promise<{
 
         {/* Reviews Section */}
 
-        <div className="bg-white rounded-xl shadow-md border p-8 mt-8">
+        <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 p-8 mt-8">
 
-          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-slate-900 dark:text-slate-100">
             <FaStar size={30}/> Student Reviews
           </h2>
 
-          <p className="text-slate-600 leading-8">
+          <p className="text-slate-600 dark:text-slate-300 leading-8">
             {college.reviews || "No reviews available"}
           </p>
 

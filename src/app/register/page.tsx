@@ -69,13 +69,13 @@ export default function RegisterPage() {
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
 
-      <div className="w-full max-w-md bg-white p-8 rounded-2xl shadow-lg border border-slate-200">
+      <div className="w-full max-w-md bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700">
 
-        <h1 className="text-3xl font-bold text-center text-slate-900">
+        <h1 className="text-3xl font-bold text-center text-slate-900 dark:text-slate-100">
           Create Account
         </h1>
 
-        <p className="text-center text-slate-500 mt-2">
+        <p className="text-center text-slate-500 dark:text-slate-400 mt-2">
           Join CollegeFinder today
         </p>
 
@@ -91,7 +91,7 @@ export default function RegisterPage() {
         >
 
           <div>
-            <label className="block mb-2 text-sm font-medium">
+            <label className="block mb-2 text-sm font-medium text-slate-700 dark:text-slate-200">
               Full Name
             </label>
 
@@ -101,12 +101,12 @@ export default function RegisterPage() {
               value={form.name}
               onChange={handleChange}
               placeholder="Enter your name"
-              className="w-full border border-slate-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+              className="w-full border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-3 outline-none focus:border-blue-500 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100"
             />
           </div>
 
           <div>
-            <label className="block mb-2 text-sm font-medium">
+            <label className="block mb-2 text-sm font-medium text-slate-700 dark:text-slate-200">
               Email
             </label>
 
@@ -116,12 +116,12 @@ export default function RegisterPage() {
               value={form.email}
               onChange={handleChange}
               placeholder="Enter your email"
-              className="w-full border border-slate-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+              className="w-full border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-3 outline-none focus:border-blue-500 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100"
             />
           </div>
 
           <div>
-            <label className="block mb-2 text-sm font-medium">
+            <label className="block mb-2 text-sm font-medium text-slate-700 dark:text-slate-200">
               Password
             </label>
 
@@ -131,7 +131,7 @@ export default function RegisterPage() {
               value={form.password}
               onChange={handleChange}
               placeholder="Enter your password"
-              className="w-full border border-slate-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+              className="w-full border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-3 outline-none focus:border-blue-500 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100"
             />
           </div>
 
