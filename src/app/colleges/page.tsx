@@ -10,7 +10,7 @@ async function getColleges(search = "",page=1) {
     const limit=21;
 
 const res = await fetch(
-  `http://localhost:3000/api/colleges?search=${search}&page=${page}&limit=${limit}`,
+  `${process.env.NEXT_PUBLIC_APP_URL}/api/colleges?search=${search}&page=${page}&limit=${limit}`,
   {
     cache: "no-store",
   }

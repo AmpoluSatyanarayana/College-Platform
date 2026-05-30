@@ -8,7 +8,7 @@ async function getCollege(id: string): Promise<College | null> {
   try {
 
     const res = await fetch(
-      `http://localhost:3000/api/colleges/${id}`,
+      `${process.env.NEXT_PUBLIC_APP_URL}/api/colleges/${id}`,
       {
         cache: "no-store",
       }
