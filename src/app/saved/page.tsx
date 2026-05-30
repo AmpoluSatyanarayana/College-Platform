@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import CollegeCard from "@/components/college/CollegeCard";
 import { FaBookmark } from "react-icons/fa";
 
@@ -30,45 +30,35 @@ export default function SavedPage() {
 
   }, []);
 
-const handleRemove = async (
-  collegeId: number
-) => {
+  const handleRemove = useCallback(async (collegeId: number) => {
+    let previous: typeof savedColleges = [];
 
-  try {
+    setSavedColleges((prev) => {
+      previous = prev;
+      return prev.filter(
+        (item: { college: { id: number } }) =>
+          item.college.id !== collegeId
+      );
+    });
 
-    const res = await fetch(
-      "/api/saved",
-      {
+    try {
+      const res = await fetch("/api/saved", {
         method: "DELETE",
         headers: {
-          "Content-Type":
-            "application/json",
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          collegeId,
-        }),
+        body: JSON.stringify({ collegeId }),
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error);
       }
-    );
-
-    const data = await res.json();
-
-    if (!res.ok) {
-      throw new Error(data.error);
+    } catch (error) {
+      console.log(error);
+      setSavedColleges(previous);
     }
-
-    setSavedColleges((prev) =>
-      prev.filter(
-        (college: any) =>
-          college.college.id !== collegeId
-      )
-    );
-
-  } catch (error) {
-
-    console.log(error);
-
-  }
-};
+  }, []);
 
   return (
 

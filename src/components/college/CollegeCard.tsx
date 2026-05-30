@@ -2,7 +2,7 @@
 
 import { College } from "@/types/college";
 import Link from "next/link";
-import { useState,useEffect } from "react";
+import { memo } from "react";
 import {FaRegBookmark,FaBookmark} from "react-icons/fa";
 
 type Props = {
@@ -12,7 +12,7 @@ type Props = {
   onSave?: (collegeId: number) => void;
 };
 
-export default function CollegeCard({college,isSaved,onRemove,onSave}: Props) {
+function CollegeCard({college,isSaved,onRemove,onSave}: Props) {
 
 
   return (
@@ -46,6 +46,8 @@ export default function CollegeCard({college,isSaved,onRemove,onSave}: Props) {
       </Link>
     
 <button
+  type="button"
+  aria-label={isSaved ? "Remove from saved" : "Save college"}
   onClick={() =>isSaved ? (onRemove?.(college.id)) : (onSave?.(college.id))}
 >
   {isSaved ? (
@@ -65,3 +67,11 @@ export default function CollegeCard({college,isSaved,onRemove,onSave}: Props) {
     </div>
   );
 }
+
+export default memo(CollegeCard, (prev, next) => {
+  return (
+    prev.college.id === next.college.id &&
+    prev.isSaved === next.isSaved &&
+    prev.college.name === next.college.name
+  );
+});
