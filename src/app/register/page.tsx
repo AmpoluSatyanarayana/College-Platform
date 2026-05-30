@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
+import PasswordInput from "@/components/ui/PasswordInput";
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -125,13 +126,11 @@ export default function RegisterPage() {
               Password
             </label>
 
-            <input
-              type="password"
+            <PasswordInput
               name="password"
               value={form.password}
               onChange={handleChange}
               placeholder="Enter your password"
-              className="w-full border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-3 outline-none focus:border-blue-500 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100"
             />
           </div>
 

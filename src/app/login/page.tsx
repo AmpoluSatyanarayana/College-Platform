@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useAuth } from "@/context/AuthContext";
 import { MdWavingHand } from "react-icons/md";
+import PasswordInput from "@/components/ui/PasswordInput";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -110,13 +111,11 @@ export default function LoginPage() {
               Password
             </label>
 
-            <input
-              type="password"
+            <PasswordInput
               name="password"
               value={form.password}
               onChange={handleChange}
               placeholder="Enter your password"
-              className="w-full border border-slate-300 dark:border-slate-600 rounded-lg px-4 py-3 outline-none focus:border-blue-500 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100"
             />
           </div>
 
